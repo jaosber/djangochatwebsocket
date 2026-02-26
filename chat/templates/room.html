@@ -1,0 +1,175 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms</title>
+
+
+  <link rel="stylesheet" href="{% static '../static/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static '../static/assets/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css' %}">
+  <link rel="stylesheet" href="{% static '../static/assets/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css' %}">
+  <script src=" {% static '../static/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static '../static/assets/style.css' %}">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* Altura mínima de todo el viewport */
+      margin: 0;
+    }
+
+
+    .card {
+      box-shadow: 0 2px 2px 0 rgb(0 0 0 / 5%);
+    }
+
+    .avatar.sm {
+      width: 0.5rem;
+      height: 0.5rem;
+      font-size: .818125rem;
+    }
+
+    .table-nowrap .table td,
+    .table-nowrap .table th {
+      white-space: nowrap;
+    }
+
+    .table>:not(caption)>*>* {
+      padding: 0.75rem 1.25rem;
+      border-bottom-width: 1px;
+    }
+
+    table th {
+      font-weight: 600;
+      background-color: #fcfcfc !important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <header class="py-3 mb-4">
+    <nav class="py-2 border-bottom">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="/"
+              class="nav-link link-body-emphasis px-2 link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover active"
+              aria-current="page">Return To Home</a>
+          </li>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-threads"
+                viewBox="0 0 16 16">
+                <path
+                  d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161" />
+              </svg>
+            </a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">NOW WHAT?</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container" style="margin-top: 20px; margin-bottom: 50px;">
+
+    <div class="row">
+      <div class="col-12 mb-3 mb-lg-5">
+        <div class="overflow-hidden card table-nowrap table-card">
+
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Rooms</h5>
+            <a href="#!" class="btn btn-light btn-sm">View All</a>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table mb-0">
+              <thead class="small text-uppercase bg-body text-muted">
+                <tr>
+                  <th>Name</th>
+                  <th>Created Date</th>
+                  <th>Last Post</th>
+                  <th>Status</th>
+                  <th>Online</th>
+                  <th>Info</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+
+                <tr class="align-middle">
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <a href="/room/welcome"
+                          class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                          Welcome
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td>21/07/2021</td>
+                  <td>29/09/2024</td>
+                  <td> <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">Active</span> </td>
+                  <td> <span class="badge bg-info-subtle text-info-emphasis rounded-pill">7</span> </td>
+                  <td> <a href="#!" class="btn btn-light btn-sm">Details</a> </td>
+                </tr>
+
+                <tr class="align-middle">
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <a href="/room/echo"
+                          class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                          Echo
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td>21/03/2021</td>
+                  <td>16/08/2024</td>
+                  <td> <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill">Active</span> </td>
+                  <td> <span class="badge bg-info-subtle text-info-emphasis rounded-pill">7</span> </td>
+                  <td> <a href="#!" class="btn btn-light btn-sm">Details</a> </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+      <span class="text-body-secondary"> <a class="slink" href="/">© 2024 Jaime B. & Edwar G. </a> </span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.dcontainer {
+
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100%;
+  /*overflow: auto;*/
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  border: 1.5px solid #dfe1e5;
+
+  display: flex;
+  justify-content: space-between;
+
+  /*justify-content: center;*/
+
+}
+
+
+
+
+.btnLogo{
+
+display: flex;
+justify-content: left;
+
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 300%;
+  margin-left: 30px;
+
+
+  
+}
+
+.btnLogo img{
+
+  width: 30px;
+
+  margin-left: 5%;
+ 
+}
+
+.btnLogo h1{
+
+  font-size: 20px;
+  margin: 0%;
+  margin-left: 5px;
+
+  color: #363333;
+
+  margin-top: 3px;
+
+  
+
+}
+
+.header-opciones{
+
+  display: flex;
+  justify-content: center;
+
+  margin-right: 5%;
+
+
+  padding: 0;
+
+}
+
+
+
+.header-opciones ul{
+
+  margin: 0;
+  padding: 0;
+
+  margin-left: 20px;
+  
+}
+
+
+.header-opciones a{
+  color: black;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+  
+}
+
+#pageSelected {
+
+  font-weight: bold;
+  border-bottom: 2px solid;
+}
+
+.mainbody {
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  width: 100%;
+  height: 90%;
+  border-radius: 0px;
+  /*border: 1.5px solid #000000;*/
+
+}
+
+.footerbar {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  width: 100%;
+  height: 5%;
+  border-radius: 0px;
+  /*border: 1.5px solid #000000;*/
+  border: 1.5px solid #dfe1e5;
+}
+
+
+.maintitle {
+  background-color: rgb(255, 255, 255);
+  margin-top: 15%;
+  width: 100%;
+  height: 128px;
+  border-radius: 1.5px;
+  /*border: 1.5px solid #dfe1e5;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+
+}
+
+
+
+.searchinputcontainer {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0px;
+  width: 100%;
+  height: auto;
+  border-radius: 1.5px;
+  /*border: 1.5px solid #dfe1e5;*/
+  display: flex;
+  justify-content: center;
+}
+
+.homebuttoncontainer {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10%;
+  width: 100%;
+  height: 30%;
+  border-radius: 1.5px;
+  /*border: 1.5px solid #dfe1e5;*/
+}
+
+
+.sh1 {
+  font-size: 59px;
+
+
+}
+
+
+.searchinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 16px;
+  width: 32rem;
+  height: 38px;
+  border: 2px solid rgb(66, 66, 66);
+  border-radius: 32px;
+  transition-duration: 0.2s;
+}
+
+.searchinput:hover {
+  box-shadow: 3px 3px 3px rgb(99, 99, 99);
+}
+
+
+.sinput {
+  margin: 16px;
+  width: 32rem;
+  height: 38px;
+  border-radius: 16px;
+  transition-duration: 0.2s;
+}
+
+.sinput:hover {
+  box-shadow: 2px 2px 2px rgb(99, 99, 99);
+}
+
+.sbutton {
+  border-radius: 4px;
+  margin: 8px;
+ height: 45px;
+ 
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.2s;
+
+  padding: 5px;
+
+  padding-left: 15PX;
+  padding-right: 15PX;
+
+}
+
+.sbutton:hover {
+  border: 1.5px solid#272727;
+  box-shadow: 2px 2px 2px rgb(99, 99, 99);
+}
+
+.sbutton:active {
+  background-color: #dadada;
+}
+
+.slink {
+  font-size: 13px;
+  color: black;
+  margin: 10px;
+}
+
+.itemcontainericon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  margin: 0px;
+  width: 40px;
+  height: 38px;
+  border-radius: 32px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.itemcontainerinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(99, 199, 99, 0);
+  width: 100%;
+  height: 34px;
+  border-radius: 16px;
+}
+
+.ginput {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 18px;
+  width: 95%;
+  margin-left: 5px;
+  border: none;
+}
+
+.ginput[type="text"]:focus {
+  background-color: none;
+  border: none;
+  outline: none;
+}
+
+
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+  padding: 10px 0;
+}
