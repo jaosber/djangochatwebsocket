@@ -1,5 +1,7 @@
 # Django WebSocket Chatroom
 
+<img title="" src="docs/images/home.png" alt="Home" width="465" data-align="center">
+
 Real-time chatroom built with Django Channels and WebSockets. Uses Daphne as the ASGI server and Redis as the channel layer (message broker) for handling concurrent WebSocket connections. No authentication required — users join as guests.
 
 ## How It Works
@@ -112,3 +114,7 @@ Open your browser at `http://127.0.0.1:8000`.
 - **Redis** — Channel layer / message broker
 - **Bootstrap 5.3.3** — Frontend styling
 - **SQLite** — Database (models defined, not yet integrated)
+
+![Servers](docs/images/servers.png)
+![Chatrooms](docs/images/chatrooms.png)
+![Chat](docs/images/chat.png)
