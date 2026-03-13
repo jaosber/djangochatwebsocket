@@ -118,3 +118,7 @@ Open your browser at `http://127.0.0.1:8000`.
 ![Servers](docs/images/servers.png)
 ![Chatrooms](docs/images/chatrooms.png)
 ![Chat](docs/images/chat.png)
+
+---
+
+*Originally developed on 3 October 2024.*
